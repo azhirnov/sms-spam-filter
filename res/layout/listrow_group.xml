@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/filter_padding_y"
+	android:paddingBottom="@dimen/filter_padding_y" >
+	    
+	<RelativeLayout
+	    android:id="@+id/listrowGroup"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/filter_height" >
+	
+	    <TextView
+	        android:id="@+id/checkedTextView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/filter_item_padding_left"
+	    	android:layout_marginTop="@dimen/fitler_img_padding_y"
+	    	android:layout_marginBottom="@dimen/fitler_img_padding_y"
+	        android:layout_toLeftOf="@+id/addFilterItem"
+	        android:gravity="left|center_vertical"
+	        android:text="Test"
+	        android:singleLine="true"
+	        android:textColor="@color/filter_gr_text"
+	        android:textSize="@dimen/filter_text_size" >
+	        android:textStyle="bold"
+	
+	    </TextView>
+	
+	    <ImageView
+	        android:id="@+id/addFilterItem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	    	android:paddingTop="@dimen/fitler_img_padding_y"
+	    	android:paddingBottom="@dimen/fitler_img_padding_y"
+	    	android:paddingLeft="@dimen/filter_img_padding_x"
+	    	android:paddingRight="@dimen/filter_img_padding_x"
+	        android:scaleType="fitCenter"
+	        android:adjustViewBounds="true"
+	        android:clickable="true"
+	        android:src="@drawable/btn_plus_quad" />
+	        android:layout_marginRight="2dp"
+	        android:layout_width="@dimen/filter_img_size"
+	        android:layout_height="@dimen/filter_img_size"
+	
+	</RelativeLayout>
+
+</RelativeLayout>

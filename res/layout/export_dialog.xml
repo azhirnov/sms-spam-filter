@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/dlg_bkgr"
+      android:minWidth="@dimen/dlg_min_width"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text"
+          android:text="@string/dlg_export_title" />
+      
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:background="@color/dlg_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:paddingLeft="20dp"
+      	android:paddingRight="20dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+		        
+	      <TextView
+	          	android:layout_width="match_parent"
+	          	android:layout_height="wrap_content"
+	          	android:gravity="left|center_vertical"
+	          	android:textSize="@dimen/dlg_text"
+	          	android:textColor="@color/dlg_text"
+	          	android:text="@string/dlg_export_write_name" />
+	
+	        <EditText
+	            android:id="@+id/filenameEdit"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	          	android:textSize="@dimen/dlg_text"
+	          	android:textColor="@color/dlg_text"
+				android:text="@string/dlg_export_def_name" >
+	
+	            <requestFocus />
+	        </EditText>
+    
+    </LinearLayout>
+	
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dlg_btn_height2"
+	        android:orientation="vertical" >
+      
+	        <TextView
+	            android:id="@+id/btnToSdCard"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/dlg_btn"
+	            android:textSize="@dimen/dlg_btn_text"
+	            android:textColor="@color/dlg_btn_text"
+	            android:text="@string/dlg_to_sdcard" />
+		
+	      <View
+	          android:layout_width="match_parent"
+	          android:layout_height="@dimen/dlg_btn_line"
+	          android:background="@color/dlg_btn_line" />
+	
+	        <TextView
+	            android:id="@+id/btnSend"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/dlg_btn"
+	            android:textSize="@dimen/dlg_btn_text"
+	            android:textColor="@color/dlg_btn_text"
+	            android:text="@string/dlg_export_send" />
+	
+	    </LinearLayout>
+
+  </LinearLayout>

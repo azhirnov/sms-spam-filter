@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingTop="2dp"
+	android:paddingBottom="2dp"
+	android:paddingLeft="@dimen/filter_item_padding_left" 
+	android:background="@color/color2" >
+	
+	<RelativeLayout
+	    android:id="@+id/listrowDetails"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/filter_item_height"
+	    android:background="@drawable/list_details"
+	    android:clickable="true" >
+	
+	    <ImageView
+	        android:id="@+id/deleteItem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:padding="2dp"
+	        android:adjustViewBounds="true"
+	        android:clickable="true"
+	        android:cropToPadding="false"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/item_delete" />
+	
+	    <TextView
+	        android:id="@+id/filterItem"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/deleteItem"
+	        android:layout_toRightOf="@+id/contactImg"
+	        android:gravity="left|center_vertical"
+	   	 	android:paddingLeft="5dp"
+	        android:singleLine="true"
+	        android:textColor="@color/filter_item_text"
+	        android:textSize="@dimen/filter_item_text"
+	        android:textStyle="normal" >
+	
+	    </TextView>
+
+	    <ImageView
+	        android:id="@+id/contactImg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:padding="@dimen/filter_item_img_padding"
+	        android:scaleType="fitCenter"
+	        android:adjustViewBounds="true"
+	        android:src="@drawable/i_all_contacts" />
+	 
+	</RelativeLayout>
+	
+</LinearLayout>

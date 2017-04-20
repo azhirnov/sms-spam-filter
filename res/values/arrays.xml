@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Auto Clear -->
+	<string-array name="pref_list_auto_clear_entries">
+	   <item>Never</item>
+	   <item>Older 2 days</item>
+	   <item>Older 1 week</item>
+	   <item>Older 2 week</item>
+	   <item>Older 1 month</item>
+	</string-array>
+	 
+	<string-array name="pref_list_auto_clear_values">
+	   <item>1</item>
+	   <item>2</item>
+	   <item>3</item>
+	   <item>4</item>
+	   <item>5</item>
+	</string-array>
+	
+	
+	<!-- Analyze Mode -->
+	<string-array name="pref_list_analyze_mode_entries">
+	    <item>Default (black/white list)</item>
+	    <item>For most triggered</item>
+	    <item>Strict time</item>
+	    <item>Strong filtering</item>
+	</string-array>
+
+	<string-array name="pref_list_analyze_mode_values">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	</string-array>
+	
+	
+	<!-- Analyze Mode -->
+	<string-array name="pref_list_analyze_mode_entries_pro">
+	    <item>Default (black/white list)</item>
+	    <item>For most triggered</item>
+	    <item>Strict time</item>
+	    <item>Strong filtering</item>
+	    <item>Very strong filtering</item>
+	</string-array>
+
+	<string-array name="pref_list_analyze_mode_values_pro">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	</string-array>
+	
+	
+	<!-- Suspect Mode -->
+	<string-array name="pref_list_suspect_mode_entries">
+	    <item>Allow</item>
+	    <item>Block</item>
+	    <item>Show popup</item>
+	</string-array>
+
+	<string-array name="pref_list_suspect_mode_values">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	</string-array>
+	    
+	    
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Filter</string>
+    <string name="app_dir">SMS Filter</string>
+    
+    
+    <!-- Main Menu -->
+    <string name="btn_add_filter">Add filter</string>
+    <string name="tab_sms_filter">Filters</string>
+    <string name="tab_sms_log">Logs</string>
+    <string name="title_text">SMS Spam Filter</string>
+    
+    
+    <!-- Add Filter Menu -->
+    <string name="txt_add_filter">Add filter</string>
+  	<string name="btn_replace">Replace</string>
+    
+    
+    <!-- Add Content Filter -->
+    <string name="btn_append">Append</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="txt_content_word">content word</string>
+    <string name="txt_add_content_word">Write content word</string>
+    <string name="rbtn_whole_word">Whole word</string>
+    <string name="rbtn_part_of_word">Part of word</string>
+    <string name="rbtn_regexp">Regular expression</string>
+    
+    
+    <!-- Add Time Filter -->
+    <string name="txt_time_from">From:</string>
+    <string name="txt_time_to">To:</string>
+    
+    
+    <!-- Filter Names -->
+    <string name="allow_sender">Allow sender</string>
+    <string name="block_sender">Block sender</string>
+  	<string name="allow_content">Allow content word</string>
+  	<string name="block_content">Block content word</string>
+  	<string name="allow_time">Allow time</string>
+  	<string name="block_time">Block time</string>
+  	<string name="custom_filters">Extended blocks</string>
+  	
+  	
+  	<!-- Add Sender Filter Menu -->
+  	<string name="add_sender_from">Add sender</string>
+  	<string name="add_from_inbox">From inbox</string>
+  	<string name="add_from_contacts">From contacts</string>
+  	<string name="add_from_call_logs">Call logs</string>
+  	<string name="add_manual_entry">Manual entry</string>
+  	<string name="add_all_cantacts">All contacts</string>
+  	<string name="filter_all_contacts">All contacts</string>
+  	<string name="txt_sender_number">sender number</string>
+  	<string name="write_sender_number">Write sender number</string>
+  	<string name="add_number_range">Numbers range</string>
+  	<string name="add_contact_number">Number from contacts</string>
+  	<string name="write_numbers_range">Write phone number prefix\nExample: +1180</string>
+  	<string name="add_inbox_title">Choose sender</string>
+  	<string name="add_inbox_empty">No items</string>
+    <string name="rbtn_full_sender">Whole number</string>
+    <string name="rbtn_part_of_sender">Part of number</string>
+  	
+  	
+  	<!-- Add Custom Filter -->
+  	<string name="custom_block_url">URLs in text</string>
+  	<string name="custom_number_in_text">Phone number in text</string>
+  	<string name="custom_diff_lang_in_word">Replacemnt to a similar character</string>
+  	<string name="custom_sender_isnt_number">Sender should be a phone number</string>
+  	
+ 	<string name="flt_info_block_urls">URL in text - detect urls in message.</string>
+ 	<string name="flt_info_phone_number">Phone number in text - detect phone number in message.</string>
+ 	<string name="flt_info_replacemt_char">Replacemnt to a similar character - detect same symbols \"Aa, B, Cc, Ee, K, M, Oo, Pp, T, y, Xx\" written
+        in anather language than processed word, this trick used to bypass content word search in other SMS blockers.</string>
+    <string name="flt_info_sender_is_number">Sender should be a phone number - check is SMS sender a phone number.</string>
+  	
+  	
+  	
+  	<!-- Group Popup -->
+  	<string name="btn_move_up">Move up</string>
+  	<string name="btn_move_down">Move down</string>
+  	<string name="btn_delete">Delete</string>
+  	<string name="btn_disable">Disable</string>
+  	<string name="btn_enable">Enable</string>
+  	
+  	
+  	<!-- Context Menu -->
+  	<string name="menu_delete_filters">Delete all filters</string>
+  	<string name="menu_clear_log">Clear log</string>
+  	<string name="menu_test_sms">Test SMS</string>
+  	<string name="menu_preferences">Preferences</string>
+  	<string name="menu_info">About</string>
+  	<string name="menu_export">Export filters</string>
+  	
+  	
+  	<!-- Delete All Dialog -->
+  	<string name="dlg_delete_all_filter">Delete all filters?</string>
+  	<string name="dlg_delete_all_logs">Delete all logs?</string>
+  	<string name="btn_ok">OK</string>
+  	
+  	
+  	<!-- Write Test SMS -->
+  	<string name="btn_send">Test</string>
+  	<string name="btn_close">Close</string>
+  	<string name="test_sms_msg_hint">Message</string>
+  	<string name="test_sms_sender_hint">Sender</string>
+  	<string name="txt_test_sms_filters">Send test SMS</string>
+  	<string name="test_sms_info">Emulate incoming SMS</string>
+    <string name="test_sms_success">SMS passed</string>
+  	<string name="test_sms_block_as_spam">SMS blocked as spam</string>
+  	<string name="test_sms_block_as_suspect">SMS blocked as suspectious</string>
+  	<string name="test_sms_shown_suspectious_popup">Shown suspectious popup</string>
+  	<string name="test_sms_pass_as_suspect">Suspectious SMS was passed</string>
+  	
+    
+    <!-- View SMS -->
+    <string name="view_sms">View SMS</string>
+    <string name="btn_to_inbox">To inbox</string>
+    
+    
+    <!-- Preferences -->
+    <string name="pref_title">Preferences</string>
+    <string name="pref_options">Options</string>
+    <string name="pref_modes">Modes</string>
+    <string name="pref_other">Other</string>
+    <string name="pref_show_notif">Show notifications</string>
+    <string name="pref_show_notif_sum">Show notifications when SMS blocked</string>
+    <string name="pref_auto_clear">Automatic cleaning</string>
+    <string name="pref_auto_clear_sum">Delete outdated logs</string>
+    <string name="pref_analyze_mode">Analyzing mode</string>
+    <string name="pref_analyze_mode_sum">Choose analyzing mode of triggered filters</string>
+    <string name="pref_prog_enabled_sum">Enable or disable SMS filtering</string>
+    <string name="pref_prog_enabled">Enable SMS filters</string>
+    <string name="pref_block_suspect">Suspecious SMS</string>
+    <string name="pref_block_suspect_sum">What to do with suspecious SMS</string>
+  	<string name="pref_light_indicator">Enable LED light</string>
+  	<string name="pref_light_indicator_sum">Active when SMS was blocked</string>
+ 	<string name="pref_check_prio_sum">Check priority of receiving SMS</string>
+ 	<string name="pref_check_prio">Check priority</string>
+    
+    
+    <!-- Open Filters Menu -->
+    <string name="btn_replace_filters">Replace</string>
+    <string name="btn_append_filters">Append</string>
+    <string name="btn_merge_filters">Merge</string>
+    <string name="txt_what_to_do_with_new_filters">What to do with new filters?</string>
+    
+    
+    <!-- First Open Notification -->
+ 	<string name="use_def_filter_text">Do you want to use default filters?</string>
+    
+    
+    <!-- Info -->
+    <string name="info_title">About</string>
+    <string name="info_text" formatted="false">
+        This application contains most poverfull filters to block all incoming SMS spam!\n
+        \n
+        In preferences select one of this analyzing mode:\n
+        \n
+		● Default this is simple black / white list, has low level of blocking:\n
+			\t- If any allowing filters triggered then SMS passed to inbox.\n
+			\t- If any blocking filters triggered then SMS blocked.\n
+			\t- Otherwise SMS marked as suspecious.\n
+		\n
+		● For most triggered:\n
+			\t- if number of triggered blocking filters greater than or equal number of triggered allowing filters then SMS blocked.\n
+        	\t- If none of filters triggered then SMS marked as suspecious.\n
+        	\t- Otherwise SMS passed to inbox.\n
+        \n
+        ● Strict time:\n
+        	\t- If blocking time filters is triggered or allowing time filters not triggered then SMS blocked.\n
+        	\t- Otherwise used \"For Most Triggered\" mode.\n
+        \n
+        ● Strong filtering:\n
+        	\t- If any blocking filter triggered then SMS blocked.\n
+        	\t- If any allowing filter triggered then SMS passed to inbox.\n
+        	\t- Otherwise SMS marked as suspecious.\n
+        \n
+        ● Very strong filtering has high level of blocking (available in Pro version only):\n
+        	\t- If any blocking filter triggered or any allowing filter group not triggered then SMS blocked.\n
+        	\t- If any allowing filter triggered then SMS passed to inbox.\n
+        	\t- Otherwise SMS marked as suspecious.\n
+        \n
+        What happened with suspecious SMS after analyzing defined in preferences.\n
+        \n
+        Long click on filter group opens popup menu to edit group.\n
+        \n
+    </string>
+    
+    
+    <!-- Other -->
+    <string name="filters_exported">Filters exported to:</string>
+    <string name="filters_not_exported">Filters not exported</string>
+    <string name="notif_block_incoming_sms">Blocked incoming SMS</string>
+    <string name="confirm_deleting">Delete item?</string>
+    <string name="confirm_deleting_group">Delete group?</string>
+    
+    <string name="item_already_listed">Filter is already listed</string>
+    
+    <string name="press_back_again">Press BACK again to exit</string>
+  	
+  	
+  	<!-- Popup SMS View -->
+  	<string name="txt_received_suspect_sms">Received suspecious SMS</string>
+  	<string name="btn_allow_sms">Allow</string>
+  	<string name="btn_block_sms">Block</string>
+  	
+  	
+  	<!-- Export Dialog -->
+  	<string name="dlg_export_title">Export filters</string>
+  	<string name="dlg_export_write_name">Write filters file name:</string>
+  	<string name="dlg_export_def_name">my_filters</string>
+  	<string name="dlg_export_send">Share via...</string>
+  	<string name="dlg_to_sdcard">Save to SD card</string>
+  	
+  	<string name="dlg_export_cant_save_to_sd">Can\'t export filters, SD card not available!</string>
+  	
+  	<string name="share_subject">Try my SMS filters!</string>
+  	<string name="share_text" formatted="false">
+		\n
+		Download \"SMS Spam Filter\" from Google Play:\n
+		Free: https://play.google.com/store/apps/details?id=singulapps.smsfilter.free \n
+		Pro:  https://play.google.com/store/apps/details?id=singulapps.smsfilter.pro \n
+	</string>
+  	<string name="share_selector">Choose sharing method</string>
+  	
+ 	<string name="replace_rename_title">Warning</string>
+ 	<string name="replace_rename_text">File \"%s\" is already exists!</string>
+ 	<string name="btn_rename">Rename</string>
+  	
+  	
+  	<!-- Import Panel in Main Menu -->
+  	<string name="txt_found_filters">%d filters found</string>
+  	<string name="btn_import">Import</string>
+  	<string name="import_filters_title">Import filters</string>
+  	
+  	
+ 	<!-- Priority Warning Dialog -->
+ 	<string name="dlg_reinstall_title">Warning</string>
+ 	<string name="dlg_reinstall_txt" formatted="false">
+ 	    The next applications:\n\n
+ 	    %s\nreceive SMS before it can be blocked by \"%s\",
+ 	    please reinstall this applications to change priority.
+ 	</string>
+ 	<string name="dlg_reinstall_dont_check">Don\'t check</string>
+
+ 	
+</resources>

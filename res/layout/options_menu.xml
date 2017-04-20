@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/shadow" >
+    	
+	<RelativeLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:background="@drawable/options_bkgr"
+	      android:paddingLeft="@dimen/opt_menu_border_x"
+	      android:paddingRight="@dimen/opt_menu_border_x"
+	      android:paddingBottom="@dimen/opt_menu_border_y"
+	      android:paddingTop="@dimen/opt_menu_border_y"
+	      android:orientation="vertical" >
+	      
+	    <LinearLayout
+	          android:layout_width="@dimen/opt_menu_width"
+	          android:layout_height="@dimen/opt_menu_height"
+	          android:background="@color/dlg_bkgr"
+	          android:orientation="vertical" >
+	      	    
+	        <!-- Test SMS -->
+	        <LinearLayout
+			    android:id="@+id/btnTestSMS"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:clickable="true"
+			    android:background="@drawable/menu_btn" >
+			    
+	            <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+		        	android:scaleType="fitCenter"
+		        	android:adjustViewBounds="true"
+		        	android:padding="@dimen/opt_menu_img_padding"
+		        	android:src="@drawable/menu_test_sms" />
+		            
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			       	android:gravity="center_vertical|left"
+			       	android:paddingLeft="10dp"
+			        android:textColor="@color/filter_item_text"
+			        android:textSize="@dimen/filter_item_text"
+			        android:textStyle="normal"
+			        android:text="@string/menu_test_sms" />
+	            
+	        </LinearLayout>
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/opt_menu_line_size"
+	      	    android:background="@color/tab_div" />
+	      	
+	      	
+	        <!-- Preferences -->
+	        <LinearLayout
+			    android:id="@+id/btnPreferences"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:clickable="true"
+			    android:background="@drawable/menu_btn" >
+			    
+	            <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+		        	android:scaleType="fitCenter"
+		        	android:adjustViewBounds="true"
+		        	android:padding="@dimen/opt_menu_img_padding"
+		        	android:src="@drawable/menu_preferences" />
+		            
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			       	android:gravity="center_vertical|left"
+			       	android:paddingLeft="10dp"
+			        android:textColor="@color/filter_item_text"
+			        android:textSize="@dimen/filter_item_text"
+			        android:textStyle="normal"
+			        android:text="@string/menu_preferences" />
+	            
+	        </LinearLayout>
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/opt_menu_line_size"
+	      	    android:background="@color/tab_div" />
+	      	
+	      	
+	        <!-- Export Filters -->
+	        <LinearLayout
+			    android:id="@+id/btnExport"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:clickable="true"
+			    android:background="@drawable/menu_btn" >
+			    
+	            <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+		        	android:scaleType="fitCenter"
+		        	android:adjustViewBounds="true"
+		        	android:padding="@dimen/opt_menu_img_padding"
+		        	android:src="@drawable/menu_share" />
+		            
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			       	android:gravity="center_vertical|left"
+			       	android:paddingLeft="10dp"
+			        android:textColor="@color/filter_item_text"
+			        android:textSize="@dimen/filter_item_text"
+			        android:textStyle="normal"
+			        android:text="@string/menu_export" />
+	            
+	        </LinearLayout>
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/opt_menu_line_size"
+	      	    android:background="@color/tab_div" />
+	      	
+	      	
+	        <!-- Clear SMS Logs -->
+	        <LinearLayout
+			    android:id="@+id/btnClearLogs"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:clickable="true"
+			    android:background="@drawable/menu_btn" >
+			    
+	            <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+		        	android:scaleType="fitCenter"
+		        	android:adjustViewBounds="true"
+		        	android:padding="@dimen/opt_menu_img_padding"
+		        	android:src="@drawable/menu_clear" />
+		            
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			       	android:gravity="center_vertical|left"
+			       	android:paddingLeft="10dp"
+			        android:textColor="@color/filter_item_text"
+			        android:textSize="@dimen/filter_item_text"
+			        android:textStyle="normal"
+			        android:text="@string/menu_clear_log" />
+	            
+	        </LinearLayout>
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/opt_menu_line_size"
+	      	    android:background="@color/tab_div" />
+	      	
+	      	
+	        <!-- Delete All Filters -->
+	        <LinearLayout
+			    android:id="@+id/btnClearFilters"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:clickable="true"
+			    android:background="@drawable/menu_btn" >
+			    
+	            <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+		        	android:scaleType="fitCenter"
+		        	android:adjustViewBounds="true"
+		        	android:padding="@dimen/opt_menu_img_padding"
+		        	android:src="@drawable/menu_clear" />
+		            
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			       	android:gravity="center_vertical|left"
+			       	android:paddingLeft="10dp"
+			        android:textColor="@color/filter_item_text"
+			        android:textSize="@dimen/filter_item_text"
+			        android:textStyle="normal"
+			        android:text="@string/menu_delete_filters" />
+	            
+	        </LinearLayout>
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/opt_menu_line_size"
+	      	    android:background="@color/tab_div" />
+	      	
+	      	
+	        <!-- Info -->
+	        <LinearLayout
+			    android:id="@+id/btnInfo"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:clickable="true"
+			    android:background="@drawable/menu_btn" >
+			    
+	            <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+		        	android:scaleType="fitCenter"
+		        	android:adjustViewBounds="true"
+		        	android:padding="@dimen/opt_menu_img_padding"
+		        	android:src="@drawable/menu_info" />
+		            
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			       	android:gravity="center_vertical|left"
+			       	android:paddingLeft="10dp"
+			        android:textColor="@color/filter_item_text"
+			        android:textSize="@dimen/filter_item_text"
+			        android:textStyle="normal"
+			        android:text="@string/menu_info" />
+	            
+	        </LinearLayout>
+	          
+	    </LinearLayout>
+	
+	</RelativeLayout>
+
+</LinearLayout>

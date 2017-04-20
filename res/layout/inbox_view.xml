@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dlg_bkgr"
+    android:minWidth="@dimen/dlg_min_width"
+    android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_alignParentTop="true"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text"
+          android:text="@string/add_inbox_title" />
+      
+      <View
+          android:id="@+id/topDivider"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:layout_below="@+id/dlgTitle"
+          android:background="@color/dlg_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topDivider"
+        android:paddingBottom="@dimen/list_margin" >
+        
+        <TextView
+            android:id="@+id/noItemsInInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/list_margin"
+	        android:gravity="center"
+	        android:visibility="invisible"
+	        android:textSize="@dimen/dlg_text"
+	        android:textColor="@color/dlg_text"
+	        android:text="@string/add_inbox_empty" />
+		        
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_margin"
+            android:layout_marginRight="@dimen/list_margin"
+            android:layout_marginTop="@dimen/list_margin"
+	        android:cacheColorHint="#00000000"
+		    android:divider="@color/journal_div"
+		    android:dividerHeight="1dp" >
+        </ListView>
+			    
+	    <ProgressBar
+	        android:id="@+id/progressBar1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:indeterminateDrawable="@drawable/spinner_progress"
+	        android:layout_centerInParent="true" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

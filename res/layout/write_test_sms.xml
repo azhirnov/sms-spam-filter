@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/dlg_bkgr"
+      android:minWidth="@dimen/dlg_min_width"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text" />
+      
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:background="@color/dlg_line" />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:scrollbars="vertical" >
+      
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="@dimen/test_sms_res_text"
+        android:textColor="@color/test_sms_res_text"
+        android:text="@string/test_sms_info" />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical" >
+        
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp" >
+		    
+	        <EditText
+	            android:id="@+id/senderName"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/spacing"
+	            android:paddingRight="10dp"
+	            android:hint="@string/test_sms_sender_hint" >
+	
+	            <requestFocus />
+	        </EditText>
+	        
+	        <View
+	            android:id="@+id/spacing"
+	            android:layout_height="1dp"
+	            android:layout_width="10dp"
+	            android:layout_toLeftOf="@+id/addFromContact" />
+		        
+		    <TextView
+		        android:id="@+id/addFromContact"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_alignLeft="@+id/contactImage"
+		        android:layout_alignRight="@+id/contactImage"
+		        android:layout_alignBottom="@+id/contactImage"
+		        android:layout_alignTop="@+id/contactImage"
+	        	android:clickable="true"
+	            android:gravity="center"
+	    		style="@style/AddFilterButton" />
+		    
+		    <ImageView
+		        android:id="@+id/contactImage"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignTop="@+id/senderName"
+		        android:layout_alignBottom="@+id/senderName"
+		        android:layout_marginBottom="4dp"
+		        android:paddingTop="3dp"
+		        android:paddingBottom="3dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter"
+		        android:src="@drawable/i_contact" />
+	        
+	    </RelativeLayout>
+        
+       <EditText
+            android:id="@+id/smsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:lines="6"
+            android:minLines="4"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:hint="@string/test_sms_msg_hint" >
+        </EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+        
+        
+   </LinearLayout>
+  </ScrollView>
+
+    
+    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+		        
+	        <View
+	          	android:layout_width="match_parent"
+	          	android:layout_height="@dimen/dlg_btn_line"
+	          	android:background="@color/dlg_btn_line" />
+	
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/dlg_btn_height" >
+		
+		        <TextView
+		            android:id="@+id/btnClose"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:gravity="center"
+		            android:background="@drawable/dlg_btn"
+		            android:textSize="@dimen/dlg_btn_text"
+		            android:textColor="@color/dlg_btn_text"
+		            android:text="@string/btn_close" />
+			
+		      <View
+		          android:layout_width="@dimen/dlg_btn_line"
+		          android:layout_height="match_parent"
+		          android:background="@color/dlg_btn_line" />
+	      
+		        <TextView
+		            android:id="@+id/btnSend"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:gravity="center"
+		            android:background="@drawable/dlg_btn"
+		            android:textSize="@dimen/dlg_btn_text"
+		            android:textColor="@color/dlg_btn_text"
+		            android:text="@string/btn_send" />
+		
+		    </LinearLayout>
+	    
+	    </LinearLayout>
+    
+</LinearLayout>

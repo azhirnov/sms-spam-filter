@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/dlg_bkgr"
+      android:minWidth="@dimen/dlg_min_width"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text" />
+      
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:background="@color/dlg_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:paddingLeft="20dp"
+      	android:paddingRight="20dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+		        
+	      <TextView
+	          android:id="@+id/text"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left|center_vertical"
+	          android:textSize="@dimen/dlg_text"
+	          android:textColor="@color/dlg_text"
+	          android:text="@string/write_sender_number" />
+	
+	        <EditText
+	            android:id="@+id/filterSenderEdit"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:hint="@string/txt_sender_number" >
+	
+	            <requestFocus />
+	        </EditText>
+	        
+			<RadioGroup
+		        android:id="@+id/radioGroup1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		            
+		        <RadioButton
+		            android:id="@+id/wholeWord"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/dlg_text"
+		            android:textColor="@color/dlg_text"
+		            android:checked="true"
+		            android:text="@string/rbtn_full_sender" />
+	
+		        <RadioButton
+		            android:id="@+id/partOfWord"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/dlg_text"
+		            android:textColor="@color/dlg_text"
+		            android:text="@string/rbtn_part_of_sender" />
+	        
+	        </RadioGroup>
+    
+    </LinearLayout>
+	
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dlg_btn_height" >
+      
+	        <TextView
+	            android:id="@+id/btnCancelFilter"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/dlg_btn"
+	            android:textSize="@dimen/dlg_btn_text"
+	            android:textColor="@color/dlg_btn_text"
+	            android:text="@string/btn_cancel" />
+		
+	      <View
+	          android:layout_width="@dimen/dlg_btn_line"
+	          android:layout_height="match_parent"
+	          android:background="@color/dlg_btn_line" />
+	
+	        <TextView
+	            android:id="@+id/btnAppendFilter"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/dlg_btn"
+	            android:textSize="@dimen/dlg_btn_text"
+	            android:textColor="@color/dlg_btn_text"
+	            android:text="@string/btn_append" />
+	
+	    </LinearLayout>
+
+  </LinearLayout>
+  

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/dlg_bkgr"
+      android:minWidth="@dimen/dlg_min_width"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text" />
+      
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:background="@color/dlg_line" />
+
+	<!-- 
+        <TextView
+            android:id="@+id/addFilterCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/txt_add_filter"
+            android:textSize="@dimen/popup_menu_caption_text_size" />
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/black" />
+	 -->
+    
+        <ListView
+            android:id="@+id/filterList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:cacheColorHint="#00000000"
+		    android:divider="@color/dlg_btn_line"
+		    android:dividerHeight="1dp" >
+        </ListView>
+
+    </LinearLayout>

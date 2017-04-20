@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="AddFilterButton">
+		<item name="android:background">@drawable/add_filter_btn_v13</item>
+	</style>
+	
+	
+	<style name="PreferencesActivityStyle" parent="@android:style/Theme.Holo">
+	</style>
+ 
+</resources>

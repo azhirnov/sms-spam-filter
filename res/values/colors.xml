@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Colors -->
+    <color name="color0">#FFFF7F27</color>	<!-- orange -->
+    <color name="color1">#FFD8D8D8</color>	<!-- tab idle -->
+    <color name="color2">#FFF1F1F1</color>	<!-- bkgr -->
+    <color name="color3">#FFB1B1B1</color>	<!-- tab tap -->
+    <color name="color4">#FFD30301</color>	<!-- text -->
+    <color name="color5">#FFE8E8E8</color>	<!-- list details bkgr -->
+	<color name="transparent">#00FFFFFF</color>
+    
+    
+    <!-- Color Style -->
+    <color name="light_bkgr">#FFF1F1F1</color>
+    
+    
+    <!-- Main Menu -->
+    <color name="menu_title_text">#FFE04B39</color>	<!-- filter_gr_text -->
+    
+    
+    <!-- Filter Group -->
+    <color name="filter_gr_text">#FFE04B39</color>	<!--  FFF05A00 -->
+    <color name="filter_gr_idle">#FFD8D8D8</color>
+    <color name="filter_gr_prsd">#FFB1B1B1</color>
+    <color name="filter_gr_exp">#FFDFDFDF</color>
+    <color name="filter_gr_line">#FFFF8737</color>
+    <color name="filter_gr_line_exp">#FFFF6C00</color>
+    
+    
+    <!-- Filter Item -->
+    <color name="filter_item_bkgr">#FFEFEFEF</color>
+    <color name="filter_item_text">#FF333333</color>
+    <color name="filter_item_div">#FF0000FF</color>
+    <color name="filter_item_idle">#FFE8E8E8</color>
+    <color name="filter_item_prsd">#FFD8D8D8</color>
+    
+    
+    <!-- Tabs -->
+    <color name="tab_selection_line">#FFFF7F27</color>
+    <color name="tab_div">#FFB1B1B1</color>
+    <color name="tab_btn_idle">#FFD8D8D8</color>	<!-- filter_gr_idle -->
+    <color name="tab_btn_prsd">#FFB1B1B1</color> 	<!-- filter_gr_prsd -->
+    <color name="tab_btn_sel">#FFE8E8E8</color>
+    <color name="tab_text">#FFE04B39</color>		<!-- filter_gr_text -->
+    
+    
+    <!-- Journal -->
+    <color name="jour_item_idle">#FFFFFFFF</color>
+    <color name="jour_item_prsd">#FFFFBF6F</color>
+    <color name="jour_item_contact_txt">#FF111111</color>
+    <color name="jour_item_number_txt">#FF333333</color>
+    <color name="jour_item_text">#FF555555</color>
+    <color name="journal_div">#FFFF8737</color>		<!-- filter_gr_line -->
+    
+    
+    <!-- Test SMS -->
+    <color name="test_sms_failed">#FFFF3333</color>
+    <color name="test_sms_success">#FF33FF33</color>
+    <color name="test_sms_shown_popup">#FFFFFF00</color>
+    <color name="test_sms_res_text">#FF111111</color>
+    
+    
+    <!-- View SMS -->
+    <color name="view_sms_text_bkgr">#FFFFFFFF</color>
+    <color name="view_sms_text">#FF111111</color>
+    
+    
+    <!-- Dialogs -->
+    <color name="dlg_bkgr">#FFF1F1F1</color>		<!-- light_bkgr -->
+    <color name="dlg_line">#FFFF8737</color>		<!-- filter_gr_line -->
+    <color name="dlg_title_text">#FFE04B39</color>	<!-- filter_gr_text -->
+    <color name="dlg_btn_line">#FFB1B1B1</color>	<!-- filter_gr_prsd -->
+    <color name="dlg_text">#FF333333</color>
+    <color name="dlg_btn_text">#FF333333</color>
+    <color name="dlg_btn_idle">#00FFFFFF</color>
+    <color name="dlg_btn_prsd">#FFFF6C00</color>	<!-- filter_gr_line_exp -->
+    <color name="dlg_btn_dis">#00000000</color>
+    
+    
+    <!-- Popup -->
+    <color name="popup_border">#FFFF8737</color>		<!-- filter_gr_line -->
+    <color name="popup_div_line">#FFB1B1B1</color>		<!-- tab_div -->
+    
+    
+    <!-- Add Filter Btn -->
+    <color name="addfltr_btn_border">#FFFF8737</color>		<!-- filter_gr_line -->
+    <color name="addfltr_btn_color0">#FFD8D8D8</color>		<!-- filter_gr_idle -->
+    <color name="addfltr_btn_color1">#FFB1B1B1</color>		<!-- filter_gr_prsd -->
+    <color name="addfltr_btn_color2">#FFF1F1F1</color>		<!-- light_bkgr -->
+    <color name="addfltr_btn_text">#FFE04B39</color>		<!-- filter_gr_text -->
+    
+    
+    <!-- Pro Version -->
+    <color name="dlg_pro_btn_idle">#3F8FFF00</color>
+    <color name="dlg_pro_btn_prsd">#FF0AFF0A</color>
+    <color name="dlg_pro_btn_dis">#00000000</color>
+
+</resources>

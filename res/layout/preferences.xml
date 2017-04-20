@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/pref_title" >
+
+   <PreferenceCategory
+       android:title="@string/pref_options" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="programEnabled"
+            android:summary="@string/pref_prog_enabled_sum"
+            android:title="@string/pref_prog_enabled" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showNotifications"
+            android:summary="@string/pref_show_notif_sum"
+            android:title="@string/pref_show_notif" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="lightIndicator"
+            android:summary="@string/pref_light_indicator_sum"
+            android:title="@string/pref_light_indicator" />
+        
+   </PreferenceCategory>
+        
+   <PreferenceCategory
+       android:title="@string/pref_modes" >
+        
+		<ListPreference
+			android:title="@string/pref_auto_clear"
+			android:summary="@string/pref_auto_clear_sum"
+           	android:key="autoClearList"
+            android:defaultValue="1"
+            android:entries="@array/pref_list_auto_clear_entries"
+            android:entryValues="@array/pref_list_auto_clear_values" />
+        
+		<ListPreference
+			android:title="@string/pref_analyze_mode"
+			android:summary="@string/pref_analyze_mode_sum"
+           	android:key="analyzeMode"
+            android:defaultValue="0"
+            android:entries="@array/pref_list_analyze_mode_entries"
+            android:entryValues="@array/pref_list_analyze_mode_values" />
+        
+		<ListPreference
+			android:title="@string/pref_block_suspect"
+			android:summary="@string/pref_block_suspect_sum"
+           	android:key="suspectMode"
+            android:defaultValue="2"
+            android:entries="@array/pref_list_suspect_mode_entries"
+            android:entryValues="@array/pref_list_suspect_mode_values" />
+        
+   </PreferenceCategory>
+        
+   <PreferenceCategory
+       android:title="@string/pref_other" >
+		
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkPriority"
+            android:summary="@string/pref_check_prio_sum"
+            android:title="@string/pref_check_prio" />
+       
+   </PreferenceCategory>
+    
+</PreferenceScreen>

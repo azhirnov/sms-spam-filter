@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_bkgr" >
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_logo_height"
+	    android:layout_marginLeft="@dimen/list_margin"
+	    android:layout_marginRight="@dimen/list_margin"
+	    android:layout_alignParentTop="true"
+		android:paddingTop="@dimen/title_logo_margin_y"
+		android:paddingBottom="@dimen/title_logo_margin_y"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/titleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo_icon"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+            
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/titleIcon"
+            android:layout_toLeftOf="@id/contextMenu"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/menu_title_text"
+            android:textSize="@dimen/title_logo_text"
+            android:text="@string/title_text" />
+        
+    </RelativeLayout>
+    
+        <View
+            android:layout_below="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_div_width"
+            android:background="@color/tab_div" />
+    
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/openfltr_quest_margin"
+		android:layout_above="@+id/btnGroup"
+        android:gravity="center"
+        android:textColor="@color/addfltr_btn_text"
+        android:textSize="@dimen/openfltr_quest_text"
+        android:text="@string/txt_what_to_do_with_new_filters" />
+    
+    <LinearLayout
+        android:id="@+id/btnGroup"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:orientation="vertical" >
+    	android:layout_below="@+id/question"
+        
+	    <TextView
+	        android:id="@+id/replaceFilters"
+            android:layout_width="@dimen/openfltr_btn_width"
+            android:layout_height="@dimen/openfltr_btn_height"
+            android:layout_marginBottom="@dimen/openfltr_btn_margin"
+        	android:clickable="true"
+            android:onClick="ReplaceFilters"
+            android:gravity="center"
+    		style="@style/AddFilterButton"
+            android:textColor="@color/addfltr_btn_text"
+            android:textSize="@dimen/openfltr_btn_text"
+            android:text="@string/btn_replace_filters" />
+        
+	    <TextView
+	        android:id="@+id/appendFilters"
+            android:layout_width="@dimen/openfltr_btn_width"
+            android:layout_height="@dimen/openfltr_btn_height"
+            android:layout_marginBottom="@dimen/openfltr_btn_margin"
+        	android:clickable="true"
+            android:onClick="AppendFilters"
+            android:gravity="center"
+    		style="@style/AddFilterButton"
+            android:textColor="@color/addfltr_btn_text"
+            android:textSize="@dimen/openfltr_btn_text"
+            android:text="@string/btn_append_filters" />
+        
+	    <TextView
+	        android:id="@+id/mergeFilters"
+            android:layout_width="@dimen/openfltr_btn_width"
+            android:layout_height="@dimen/openfltr_btn_height"
+            android:layout_marginBottom="@dimen/openfltr_btn_margin"
+        	android:clickable="true"
+            android:onClick="MergeFilters"
+            android:gravity="center"
+    		style="@style/AddFilterButton"
+            android:textColor="@color/addfltr_btn_text"
+            android:textSize="@dimen/openfltr_btn_text"
+            android:text="@string/btn_merge_filters" />
+	    
+    </LinearLayout>
+
+</RelativeLayout>

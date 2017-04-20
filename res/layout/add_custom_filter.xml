@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dlg_bkgr"
+    android:minWidth="@dimen/dlg_min_width"
+    android:orientation="vertical" >
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/dlgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/dlg_title_text"
+        android:textColor="@color/dlg_title_text" />
+      
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dlg_title_line_size"
+        android:background="@color/dlg_line" />
+
+    
+    <!-- ITEMS -->
+	<TextView
+	    android:id="@+id/blockUrls"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	    android:paddingLeft="@dimen/add_sender_item_padding_left"
+	    android:paddingTop="@dimen/add_sender_item_padding_top"
+	    android:background="@drawable/dlg_btn"
+	    android:textColor="@color/dlg_btn_text"
+	    android:text="@string/custom_block_url"
+	    android:textSize="@dimen/dlg_btn_text" />
+	    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dlg_btn_line"
+        android:background="@color/dlg_btn_line" />
+    
+    
+	<TextView
+	    android:id="@+id/numberInText"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	    android:paddingLeft="@dimen/add_sender_item_padding_left"
+	    android:paddingTop="@dimen/add_sender_item_padding_top"
+	    android:background="@drawable/dlg_btn"
+	    android:textColor="@color/dlg_btn_text"
+	    android:text="@string/custom_number_in_text"
+	    android:textSize="@dimen/dlg_btn_text" />
+	    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dlg_btn_line"
+        android:background="@color/dlg_btn_line" />
+    
+    
+	<TextView
+	    android:id="@+id/diffLangInWord"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	    android:paddingLeft="@dimen/add_sender_item_padding_left"
+	    android:paddingTop="@dimen/add_sender_item_padding_top"
+	    android:background="@drawable/dlg_btn"
+	    android:textColor="@color/dlg_btn_text"
+	    android:text="@string/custom_diff_lang_in_word"
+	    android:textSize="@dimen/dlg_btn_text" />
+	    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dlg_btn_line"
+        android:background="@color/dlg_btn_line" />
+    
+    
+	<TextView
+	    android:id="@+id/senderIsntNumber"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	    android:paddingLeft="@dimen/add_sender_item_padding_left"
+	    android:paddingTop="@dimen/add_sender_item_padding_top"
+	    android:background="@drawable/dlg_btn"
+	    android:textColor="@color/dlg_btn_text"
+	    android:text="@string/custom_sender_isnt_number"
+	    android:textSize="@dimen/dlg_btn_text" />
+	    
+    
+</LinearLayout>

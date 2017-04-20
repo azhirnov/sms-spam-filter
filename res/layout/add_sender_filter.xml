@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/dlg_bkgr"
+      android:minWidth="@dimen/dlg_min_width"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text" />
+      
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:background="@color/dlg_line" />
+
+        <!-- 
+        <TextView
+            android:id="@+id/senderFilterCaption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/add_sender_from"
+            android:textSize="@dimen/add_sender_cap_text_size" />
+	    <View
+	        android:id="@+id/View1"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/black" />
+	
+	 -->
+	    <TextView
+	        android:id="@+id/addFromInbox"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_from_inbox"
+	        android:textSize="@dimen/dlg_btn_text" />
+	    
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+	    <TextView
+	        android:id="@+id/addFromContacts"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_from_contacts"
+	        android:textSize="@dimen/dlg_btn_text" />
+	    
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+	    <TextView
+	        android:id="@+id/addFromContactNumber"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_contact_number"
+	        android:textSize="@dimen/dlg_btn_text" />
+	    
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+        <!-- 
+	    <TextView
+	        android:id="@+id/addFromCallLogs"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_from_call_logs"
+	        android:textSize="@dimen/dlg_btn_text" />
+	    
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	 -->
+	
+	    <TextView
+	        android:id="@+id/manualEntry"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_manual_entry"
+	        android:textSize="@dimen/dlg_btn_text" />
+	    
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+	    <TextView
+	        android:id="@+id/numbersRange"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_number_range"
+	        android:textSize="@dimen/dlg_btn_text" />
+	    
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_btn_line"
+          android:background="@color/dlg_btn_line" />
+	
+	    <TextView
+	        android:id="@+id/allContacts"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/add_sender_item_padding_bottom"
+	        android:paddingLeft="@dimen/add_sender_item_padding_left"
+	        android:paddingTop="@dimen/add_sender_item_padding_top"
+	        android:background="@drawable/dlg_btn"
+	        android:textColor="@color/dlg_btn_text"
+	        android:text="@string/add_all_cantacts"
+	        android:textSize="@dimen/dlg_btn_text" />
+    
+    </LinearLayout>

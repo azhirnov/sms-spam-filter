@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/shadow" >
+	      
+	<RelativeLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:background="@drawable/options_bkgr"
+	      android:paddingLeft="@dimen/opt_menu_border_x"
+	      android:paddingRight="@dimen/opt_menu_border_x"
+	      android:paddingBottom="@dimen/opt_menu_border_y"
+	      android:paddingTop="@dimen/opt_menu_border_y"
+	      android:orientation="vertical" >
+	      
+	     <LinearLayout
+	          android:layout_width="@dimen/group_popup_width"
+	          android:layout_height="@dimen/group_popup_height"
+	          android:background="@color/dlg_bkgr"
+	          android:orientation="vertical" >
+	      	    
+	         <!-- MoveUp -->
+		      <Button
+		          android:id="@+id/btnMoveUp"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		       	  android:layout_weight="1"
+		          android:background="@color/light_bkgr"
+		          android:text="@string/btn_move_up" />
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/group_popup_line_size"
+	      	    android:background="@color/tab_div" />
+		
+	      	
+	         <!-- MoveDown -->
+		      <Button
+		          android:id="@+id/btnMoveDown"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		       	  android:layout_weight="1"
+		          android:background="@color/light_bkgr"
+		          android:text="@string/btn_move_down" />
+	      	
+	      	<View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/group_popup_line_size"
+	      	    android:background="@color/tab_div" />
+		
+	      	
+	         <!-- Delete -->
+		      <Button
+		          android:id="@+id/btnDelete"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		       	  android:layout_weight="1"
+		          android:background="@color/light_bkgr"
+		          android:text="@string/btn_delete" />
+	      	
+	      	<!-- <View
+	      	    android:layout_width="match_parent"
+	      	    android:layout_height="@dimen/group_popup_line_size"
+	      	    android:background="@color/tab_div" /> -->
+	      	
+	      	
+	         <!-- Disable -->
+		     <!-- <Button
+		          android:id="@+id/btnDisable"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		       	  android:layout_weight="1"
+		          android:background="@color/light_bkgr"
+		          android:text="@string/btn_disable" /> -->
+	          
+	    </LinearLayout>
+	
+	</RelativeLayout>
+	
+</LinearLayout>

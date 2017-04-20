@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid 
+            android:color="@color/dlg_bkgr"/>
+		<gradient
+            android:endColor="@color/addfltr_btn_color0"
+            android:startColor="@color/addfltr_btn_color2"
+            android:angle="270" />
+        <corners
+            android:radius="5dp" />
+        <stroke
+        	android:width="@dimen/addfltr_btn_border"
+        	android:color="@color/popup_border" />
+ </shape>

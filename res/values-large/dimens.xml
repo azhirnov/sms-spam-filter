@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Main Menu Tabs -->
+    <dimen name="tab_height">50dp</dimen>
+    <dimen name="tab_text">22sp</dimen>
+    <dimen name="list_margin">30dp</dimen>
+    
+    
+    <!-- Main Menu -->
+    <dimen name="title_logo_height">60dp</dimen>
+    <dimen name="title_logo_text">24sp</dimen>
+    <dimen name="title_logo_margin_y">10dp</dimen>
+    
+    <dimen name="btn_import_filters_text">18sp</dimen>
+    <dimen name="btn_import_filters_margin_x">30dp</dimen>
+    <dimen name="btn_import_filters_margin_y">9dp</dimen>
+    
+    
+    <!-- List Row Group (Filter) -->
+    <dimen name="filter_height">54dp</dimen>
+    <dimen name="filter_text_size">22sp</dimen>
+    <dimen name="filter_item_padding_left">40dp</dimen>
+    <dimen name="filter_unit_width">8dp</dimen>
+    <dimen name="filter_padding_y">8dp</dimen>
+    <dimen name="fitler_img_padding_y">7dp</dimen>
+    <dimen name="filter_img_padding_x">10dp</dimen>
+    
+    
+    <!-- List Row Details (Items) -->
+    <dimen name="filter_item_height">42dp</dimen>
+    <dimen name="filter_item_text">18sp</dimen>
+        
+    
+    <!-- Options Popup Menu -->
+    <dimen name="opt_menu_height">270dp</dimen>		<!-- 5*54 = 200 -->
+    <dimen name="opt_menu_width">240dp</dimen>
+    <dimen name="opt_menu_icon_width">45dp</dimen>
+    <dimen name="opt_menu_border_x">3dp</dimen>
+    <dimen name="opt_menu_border_y">9dp</dimen>
+    <dimen name="opt_menu_margin_top">18dp</dimen>
+    
+    
+    <!-- Add Filter Btn -->
+    <dimen name="addfltr_btn_height">55dp</dimen>
+    <dimen name="addfltr_btn_margin">10dp</dimen>
+    <dimen name="addfltr_btn_text">18sp</dimen>
+    <dimen name="addfltr_btn_border">2dp</dimen>
+    
+    
+    <!-- Open Filters Buttons -->
+    <dimen name="openfltr_btn_width">250dp</dimen>
+    <dimen name="openfltr_btn_height">55dp</dimen>
+    <dimen name="openfltr_btn_margin">30dp</dimen>
+    <dimen name="openfltr_quest_margin">40dp</dimen>
+    <dimen name="openfltr_btn_text">18sp</dimen>
+    <dimen name="openfltr_quest_text">28sp</dimen>
+    
+    
+    <!-- Journal -->
+    <dimen name="jour_item_height">100dp</dimen>
+    <dimen name="jour_item_phone">26sp</dimen>
+    <dimen name="jour_item_text">18sp</dimen>
+    <dimen name="jour_item_date">16sp</dimen>
+    
+    
+</resources>

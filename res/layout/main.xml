@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_bkgr" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_logo_height"
+	    android:layout_marginLeft="@dimen/list_margin"
+		android:paddingTop="@dimen/title_logo_margin_y"
+		android:paddingBottom="@dimen/title_logo_margin_y"
+        android:orientation="horizontal" >
+	    android:layout_marginRight="@dimen/list_margin"
+        
+        <ImageView
+            android:id="@+id/titleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo_icon"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+        <!--   -->
+        <LinearLayout
+	        android:id="@+id/contextMenu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:clickable="true"
+	        android:onClick="OpenOptions"
+	        android:paddingRight="10dp"
+	        android:paddingLeft="25dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" >
+        
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/options_menu"
+	            android:scaleType="fitCenter"
+	            android:adjustViewBounds="true"/>
+	        
+        </LinearLayout>
+            
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/titleIcon"
+            android:layout_toLeftOf="@id/contextMenu"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/menu_title_text"
+            android:textSize="@dimen/title_logo_text"
+            android:text="@string/title_text" />
+        
+    </RelativeLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_div_width"
+            android:background="@color/tab_div" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/tab_height"
+	        android:layout_marginLeft="@dimen/list_margin"
+	        android:layout_marginRight="@dimen/list_margin"
+	        android:background="@color/tab_btn_sel"
+	        android:orientation="horizontal" >
+		    
+	        <View
+	            android:layout_width="@dimen/tab_div_width"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="@dimen/tab_div_margin_y"
+	            android:layout_marginBottom="@dimen/tab_div_margin_y"
+	            android:background="@color/tab_div" />
+	        
+	       <RelativeLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="1"
+	           android:clickable="true"
+	           android:onClick="OnSmsFilterClick"
+	           android:orientation="vertical" >
+	
+	            <TextView
+			   		android:id="@+id/tab1"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:textColor="@color/tab_text"
+	                android:textSize="@dimen/tab_text"
+	                android:enabled="false"
+	           		android:background="@drawable/tab_btn"
+	                android:text="@string/tab_sms_filter" />
+			
+			    <View
+			        android:id="@+id/line1"
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/tab_selection_line_height"
+			        android:layout_marginLeft="1dp"
+			        android:layout_marginRight="1dp"
+			        android:layout_alignBottom="@+id/tab1"
+			        android:background="@color/tab_selection_line"
+			        android:visibility="visible" />
+			    
+	        </RelativeLayout>
+		    
+	        <View
+	            android:layout_width="@dimen/tab_div_width"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="@dimen/tab_div_margin_y"
+	            android:layout_marginBottom="@dimen/tab_div_margin_y"
+	            android:background="@color/tab_div" />
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:clickable="true"
+	            android:onClick="OnSmsLogClick"
+	            android:orientation="vertical" >
+	
+	            <TextView
+			    	android:id="@+id/tab2"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:textColor="@color/tab_text"
+	                android:textSize="@dimen/tab_text"
+	                android:enabled="true"
+	            	android:background="@drawable/tab_btn"
+	                android:text="@string/tab_sms_log" />
+			
+			    <View
+			        android:id="@+id/line2"
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/tab_selection_line_height"
+			        android:layout_marginLeft="1dp"
+			        android:layout_marginRight="1dp"
+			        android:layout_alignBottom="@+id/tab2"
+			        android:background="@color/tab_selection_line"
+			        android:visibility="invisible" />
+
+        	</RelativeLayout>
+		    
+	        <View
+	            android:layout_width="@dimen/tab_div_width"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="@dimen/tab_div_margin_y"
+	            android:layout_marginBottom="@dimen/tab_div_margin_y"
+	            android:background="@color/tab_div" />
+        	
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_div_width"
+            android:background="@color/tab_div" />
+
+    </LinearLayout>
+		
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

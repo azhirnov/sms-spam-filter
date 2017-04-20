@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">СМС Фильтр</string>
+    
+    
+    <!-- Main Menu -->
+    <string name="btn_add_filter">Добавить фильтр</string>
+    <string name="tab_sms_filter">Фильтры</string>
+    <string name="tab_sms_log">Лог</string>
+    <string name="title_text">Фильтр СМС Спама</string>
+    
+    
+    <!-- Add Filter Menu -->
+    <string name="txt_add_filter">Добавить фильтр</string>
+  	<string name="btn_replace">Заменить</string>
+    
+    
+    <!-- Add Content Filter -->
+    <string name="btn_append">Добавить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="txt_content_word">ключевое слово</string>
+    <string name="txt_add_content_word">Напишите ключевое слово</string>
+    <string name="rbtn_whole_word">Целое слово</string>
+    <string name="rbtn_part_of_word">Часть слова</string>
+    <string name="rbtn_regexp">Регулярное выражение</string>
+    
+    
+    <!-- Add Time Filter -->
+    <string name="txt_time_from">От:</string>
+    <string name="txt_time_to">До:</string>
+    
+    
+    <!-- Filter Names -->
+    <string name="allow_sender">Разрешенный отправитель</string>
+    <string name="block_sender">Блокируемый отправитель</string>
+  	<string name="allow_content">Разрешенное слово</string>
+  	<string name="block_content">Блокируемое слово</string>
+  	<string name="allow_time">Разрешенное время</string>
+  	<string name="block_time">Блокируемое время</string>
+  	<string name="custom_filters">Расширенные блокировки</string>
+  	
+  	
+  	<!-- Add Sender Filter Menu -->
+  	<string name="add_sender_from">Добавить отправителя</string>
+  	<string name="add_from_inbox">Из входящих СМС</string>
+  	<string name="add_from_contacts">Из контактов</string>
+  	<string name="add_from_call_logs">Список звонков</string>
+  	<string name="add_manual_entry">Ручной ввод</string>
+  	<string name="add_all_cantacts">Все контакты</string>
+  	<string name="filter_all_contacts">Все контакты</string>
+  	<string name="txt_sender_number">номер отправителя</string>
+  	<string name="write_sender_number">Напишите номер отправителя</string>
+  	<string name="add_number_range">Диапазон номеров</string>
+  	<string name="add_contact_number">Номер из контактов</string>
+  	<string name="write_numbers_range">Напишите префикс для номера телефона\nПример: +7499</string>
+  	<string name="add_inbox_title">Выберете отправителя</string>
+  	<string name="add_inbox_empty">Нет сообщений</string>
+    <string name="rbtn_full_sender">Целый номер</string>
+    <string name="rbtn_part_of_sender">Часть номера</string>
+  	
+  	
+  	<!-- Add Custom Filter -->
+  	<string name="custom_block_url">Ссылки в тексте</string>
+  	<string name="custom_number_in_text">Телефонный номер в тексте</string>
+  	<string name="custom_diff_lang_in_word">Подмена на похожий символ</string>
+  	<string name="custom_sender_isnt_number">Отправитель должен быть номером телефона</string>
+  	
+ 	<string name="flt_info_block_urls">Ссылки в тексте - обнаруживает ссылки в тексте СМС.</string>
+ 	<string name="flt_info_phone_number">Номер телефона в тексте - обнаруживает номер телевона в тексте СМС.</string>
+ 	<string name="flt_info_replacemt_char">Подмена на похожий символ - обнаруживает похожие символы
+ 	    \"Aa, B, Cc, Ee, K, M, Oo, Pp, T, y, Xx\" написанные на другом языке чем проверяемое слово,
+ 	    такой способ используют для обхода поиска ключевых слов в других СМС фильтрах.</string>
+    <string name="flt_info_sender_is_number">Отправитель должен быть номером телефона -
+        проверяет является ли отправитель СМС номером телефона.</string>
+  	
+  	
+  	<!-- Group Popup -->
+  	<string name="btn_move_up">Вверх</string>
+  	<string name="btn_move_down">Вниз</string>
+  	<string name="btn_delete">Удалить</string>
+  	<string name="btn_disable">Отключить</string>
+  	<string name="btn_enable">Включить</string>
+  	
+  	
+  	<!-- Context Menu -->
+  	<string name="menu_delete_filters">Удалить все фильтры</string>
+  	<string name="menu_clear_log">Очистить лог</string>
+  	<string name="menu_test_sms">Тестовое СМС</string>
+  	<string name="menu_preferences">Настройки</string>
+  	<string name="menu_info">О Программе</string>
+  	<string name="menu_export">Экспорт фильтров</string>
+  	
+  	
+  	<!-- Delete All Dialog -->
+  	<string name="dlg_delete_all_filter">Удалить все фильтры?</string>
+  	<string name="dlg_delete_all_logs">Очистить лог?</string>
+  	<string name="btn_ok">ОК</string>
+  	
+  	
+  	<!-- Write Test SMS -->
+  	<string name="btn_send">Проверить</string>
+  	<string name="btn_close">Закрыть</string>
+  	<string name="test_sms_msg_hint">Текст сообщения</string>
+  	<string name="test_sms_sender_hint">Отправитель</string>
+  	<string name="txt_test_sms_filters">Отправить тестовое сообщение</string>
+  	<string name="test_sms_info">Эмулируется входящее сообщение</string>
+    <string name="test_sms_success">СМС пропущенно</string>
+  	<string name="test_sms_block_as_spam">СМС заблокировано как спам</string>
+  	<string name="test_sms_block_as_suspect">СМС заблокировано как подозрительное</string>
+  	<string name="test_sms_shown_suspectious_popup">Показан диалог для подозрительного СМС</string>
+  	<string name="test_sms_pass_as_suspect">Подозрительное СМС пропущено</string>
+  	
+    
+    <!-- View SMS -->
+    <string name="view_sms">Просмотр СМС</string>
+    <string name="btn_to_inbox">Во входящие</string>
+    
+    
+    <!-- Preferences -->
+    <string name="pref_title">Настройки</string>
+    <string name="pref_options">Опции</string>
+    <string name="pref_modes">Режимы</string>
+    <string name="pref_other">Разное</string>
+    <string name="pref_show_notif">Показывать уведомления</string>
+    <string name="pref_show_notif_sum">Показывать уведомления при блокировании СМС</string>
+    <string name="pref_auto_clear">Автоматическая очистка</string>
+    <string name="pref_auto_clear_sum">Очищать устаревшие логи</string>
+    <string name="pref_analyze_mode">Режим анализа</string>
+    <string name="pref_analyze_mode_sum">Выбрать режим анализа сработавших фильтров</string>
+    <string name="pref_prog_enabled_sum">Включить или отключить фильтрацию СМС</string>
+    <string name="pref_prog_enabled">Включить СМС фильтр</string>
+    <string name="pref_block_suspect">Подозрительные СМС</string>
+    <string name="pref_block_suspect_sum">Блокировать или разрешать СМС помеченные как подозрительные</string>
+  	<string name="pref_light_indicator">Включить светодиод</string>
+  	<string name="pref_light_indicator_sum">Активируется при блокировании СМС</string>
+ 	<string name="pref_check_prio_sum">Проверять приоритет получения СМС</string>
+ 	<string name="pref_check_prio">Проверять приоритет</string>
+    
+    
+    <!-- Open Filters Menu -->
+    <string name="btn_replace_filters">Заменить</string>
+    <string name="btn_append_filters">Добавить</string>
+    <string name="btn_merge_filters">Объединить</string>
+    <string name="txt_what_to_do_with_new_filters">Что делать с новыми фильтрами?</string>
+    
+    
+    <!-- First Open Notification -->
+ 	<string name="use_def_filter_text">Хотите использовать фильтры по умолчанию?</string>
+    
+    
+    <!-- Info -->
+    <string name="info_title">О Программе</string>
+    <string name="info_text"  formatted="false">
+        Это приложение содержит мощные фильтры для блокирования всего входящего СМС спама!\n
+        \n
+        В настройках выберете один из режимов анализа:\n
+        \n
+		● Стандартный это простой черный / белый список, имеет низкий уровень блокирования:\n
+			\t- Если сработал хоть один разрешающий фильтр, то СМС пропускается.\n
+			\t- Если сработал хоть один блокирующий фильтр, то СМС блокируется.\n
+			\t- В остальных случаях СМС помечается как подозрительное.\n
+		\n
+		● По большенству срабатываний:\n
+			\t- Если количество сработавших блокирующих фильтров больше или равно количеству сработавших разрешающих фильтров, то СМС блокируется.\n
+        	\t- Если ни один из фильтров не сработал, то СМС помечается как подозрительное.\n
+        	\t- В остальных случаях СМС пропускается.\n
+        \n
+        ● Строгая проверка времени:\n
+        	\t- Если сработал фильтр блокировки по времени или не было срабатываний в группе разрешенного времени, то СМС блокируется.\n
+        	\t- В остальных случаех используется режим \"По большенству срабатываний\".\n
+        \n
+        ● Сильная фильтрация:\n
+        	\t- Если сработал хоть один блокирующий фильтр, то СМС блокируется.\n
+        	\t- Если сработал хоть один разрешающий фильтр, то СМС пропускается.\n
+        	\t- В остальных случаях СМС помечается как подозрительное.\n
+        \n
+        ● Очень сильная фильтрация имеет высокий уровень блокировки (доступен только в Pro версии):\n
+        	\t- Если сработал хоть один блокирующий фильтр или не было срабатываний хоть в одной разрешающей группе, то СМС блокируется.\n
+        	\t- Если сработал хоть один разрешающий фильтр, то СМС пропускается.\n
+        	\t- В остальных случаях СМС помечается как подозрительное.\n
+        \n
+        Что происходит с подозрительными СМС после анализа определяется в настройках.\n
+        \n
+        Долгое нажатие на группу фильтров открывает всплывающее меню для редактирования группы.\n
+        \n
+    </string>
+    
+    
+    <!-- Other -->
+    <string name="filters_exported">Фильтры экспортированны в:</string>
+    <string name="filters_not_exported">Фильтры не экспортиованны</string>
+    <string name="notif_block_incoming_sms">Блокировано входящее СМС</string>
+    <string name="confirm_deleting">Удалить элемент?</string>
+    <string name="confirm_deleting_group">Удалить группу?</string>
+    
+    <string name="item_already_listed">Фильтр уже есть в списке</string>  	
+
+    <string name="press_back_again">Нажмите НАЗАД снова, чтобы выйти</string>
+  	
+    
+  	<!-- Popup SMS View -->
+  	<string name="btn_allow_sms">Разрешить</string>
+  	<string name="btn_block_sms">Блокировать</string>
+  	<string name="txt_received_suspect_sms">Получено подозрительное СМС</string>
+  	
+
+  	<!-- Export Dialog -->
+  	<string name="dlg_export_title">Экспортировать фильтры</string>
+  	<string name="dlg_export_write_name">Напишите название файла фильтров:</string>
+  	<string name="dlg_export_send">Поделиться...</string>
+  	<string name="dlg_to_sdcard">Сохранить на SD карту</string>
+  	
+  	<string name="dlg_export_cant_save_to_sd">Не удалось экспортировать фильтры, SD карта недоступна!</string>
+  	
+  	<string name="share_subject">Попробуй мои СМС фильтры!</string>
+  	<string name="share_text" formatted="false">
+		\n
+		Скачай \"Фильтр СМС Спама\" из Google Play:\n
+		Free: https://play.google.com/store/apps/details?id=singulapps.smsfilter.free \n
+		Pro:  https://play.google.com/store/apps/details?id=singulapps.smsfilter.pro \n
+  	</string>
+  	<string name="share_selector">Выбрать способ распространения</string>
+  	
+ 	<string name="replace_rename_title">Предупреждение</string>
+ 	<string name="replace_rename_text">Файл \"%s\" уже существует!</string>
+ 	<string name="btn_rename">Переименовать</string>
+  	
+  	
+  	<!-- Import Panel in Main Menu -->
+  	<string name="txt_found_filters">найдено фильтров: %d</string>
+  	<string name="btn_import">Импортиовать</string>
+  	<string name="import_filters_title">Импорт фильтров</string>
+  	
+  	
+ 	<!-- Priority Warning Dialog -->
+ 	<string name="dlg_reinstall_title">Внимание</string>
+ 	<string name="dlg_reinstall_txt" formatted="false">
+ 	    Следующие приложения:\n\n
+ 	    %s\nполучат СМС прежде чем \"%s\" сможет его заблокировать,
+ 	    пожалуйста переустановите эти приложения для изменения приоритета.
+ 	</string>
+ 	<string name="dlg_reinstall_dont_check">Не проверять</string>
+ 	
+ 	
+</resources>

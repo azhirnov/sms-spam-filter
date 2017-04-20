@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/dlg_bkgr"
+      android:minWidth="@dimen/dlg_min_width"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/dlgTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:textSize="@dimen/dlg_title_text"
+          android:textColor="@color/dlg_title_text" />
+      
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dlg_title_line_size"
+          android:background="@color/dlg_line" />
+      
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_time_from"
+	        android:textSize="@dimen/dlg_text"
+	        android:textColor="@color/dlg_text" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timePicker1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_time_to"
+	        android:textSize="@dimen/dlg_text"
+	        android:textColor="@color/dlg_text" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/timePicker2"
+	        android:layout_marginTop="20dp"
+	        android:orientation="vertical" >
+		        
+	        <View
+	          	android:layout_width="match_parent"
+	          	android:layout_height="@dimen/dlg_btn_line"
+	          	android:background="@color/dlg_btn_line" />
+	
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/dlg_btn_height" >
+	      
+		        <TextView
+		            android:id="@+id/btnCancelFilter"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:gravity="center"
+		            android:background="@drawable/dlg_btn"
+		            android:textSize="@dimen/dlg_btn_text"
+		            android:textColor="@color/dlg_btn_text"
+		            android:text="@string/btn_cancel" />
+			
+		      <View
+		          android:layout_width="@dimen/dlg_btn_line"
+		          android:layout_height="match_parent"
+		          android:background="@color/dlg_btn_line" />
+		
+		        <TextView
+		            android:id="@+id/btnAppendFilter"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:gravity="center"
+		            android:background="@drawable/dlg_btn"
+		            android:textSize="@dimen/dlg_btn_text"
+		            android:textColor="@color/dlg_btn_text"
+		            android:text="@string/btn_append" />
+		
+		    </LinearLayout>
+	    
+	    </LinearLayout>
+
+    </RelativeLayout>
+    
+</LinearLayout>
